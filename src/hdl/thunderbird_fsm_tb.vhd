@@ -125,8 +125,8 @@ begin
            assert w_lights_L = "000" report "bad9" severity failure;
            assert w_lights_R = "001" report "bad10" severity failure;
 	   w_right <= '1'; wait for k_clk_period;
-           assert w_lights_L = "011" report "bad11" severity failure;
-           assert w_lights_R = "000" report "bad12" severity failure;
+           assert w_lights_L = "000" report "bad11" severity failure;
+           assert w_lights_R = "011" report "bad12" severity failure;
 	   w_right <= '1'; wait for k_clk_period;
                assert w_lights_L = "000" report "bad13" severity failure;
            assert w_lights_R = "111" report "bad14" severity failure;
