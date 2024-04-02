@@ -122,7 +122,7 @@ begin
 	register_proc : process (i_clk, i_reset)
     begin
         if i_reset = '1' then
-            f_state <= "00000000";        -- reset state is no lights
+            f_state <= "10000000";        -- reset state is no lights
         elsif (rising_edge(i_clk)) then
             f_state <= f_state_next;    -- next state becomes current state
         end if;
